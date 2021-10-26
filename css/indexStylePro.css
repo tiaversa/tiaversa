@@ -32,38 +32,51 @@
 }
 
 /*styling the backgroubd picture*/
+.alignBoth{
+    position: relative;
+}
 .backgroundPictureContainer{
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 98vw;
+    height: 98vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background: #000;
+    background: url(/images/Capture\ 7.PNG);
     overflow: hidden;
 }
 .backgroundPictureContainer span{
     position: relative;
+    top: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 20px;
-    min-height: 20px;
+    min-width: 70px;
+    min-height: 70px;
+    background: none;
 }
 .backgroundPictureContainer span::before{
-    content: none;
+    content: '';
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url('images/Capture 7.png');
-    background-position: center;
-    background-size: cover;
+    bottom: 0;
+    width: 20vw;
+    height: 20vw;
+    background: url(/images/IMG_3687.CR2.jpg);
+    background-position: bottom;
+    background-size: 100vw 100vh;
     background-attachment: fixed;
-    transition: 4s;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: 5s;
     opacity: 0;
 }
-.backgroundPictureContainer span:click::before{
-    transition: 0s
+.backgroundPictureContainer span:hover::before{
+    transition: 0s;
     opacity: 1;
+}
+
+/*Writing in front of the main image*/
+.writing{
+    position: relative;
 }
