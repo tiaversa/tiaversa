@@ -9,9 +9,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-.heather{
+nav{
+    position: sticky;
     display: flex;
     justify-content: space-between;
+    z-index: 5;
 }
 .burger{
     background-color: white;
@@ -33,10 +35,11 @@
 
 /*styling the backgroubd picture*/
 .alignBoth{
-    position: relative;
+    position: absolute;
+    z-index: 1;
 }
 .backgroundPictureContainer{
-    position: relative;
+    position: absolute;
     width: 98vw;
     height: 98vh;
     display: flex;
@@ -79,4 +82,5 @@
 /*Writing in front of the main image*/
 .writing{
     position: relative;
+    z-index: 3;
 }
