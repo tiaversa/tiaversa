@@ -1,0 +1,67 @@
+body{
+    background-color: black;
+    color: snow;
+    
+}
+.photo{
+    max-width: 40vw;
+    max-height: 26vw;
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: 40vw;
+    grid-template-rows: auto;
+    gap: 10px 5px;
+    grid-template-areas: "build1 build1 build2 build2 . ." 
+                        "build3 build4 build4 build5 build5 ." 
+                        "build12 build12 build7 build7 build6 ." 
+                        "build9 build10 build10 build11 build11 ." 
+                        ". build8 build14 build13 . .";
+}
+.build1{
+    grid-area: build1;
+    justify-self: end;
+}
+.build2{
+    grid-area: build2;
+}
+.build3{
+    grid-area: build3;
+}
+.build4{
+    grid-area: build4;
+}
+.build5{
+    grid-area: build5;
+}
+.build6{
+    grid-area: build6;
+}
+.build7{
+    grid-area: build7;
+}
+.build8{
+    grid-area: build8;
+    justify-self: center;
+}
+.build9{
+    grid-area: build9;
+    justify-self: end;
+}
+.build10{
+    grid-area: build10;
+}
+.build11{
+    grid-area: build11;
+}
+.build12{
+    grid-area: build12;
+    justify-self: end;
+}
+.build13{
+    grid-area: build13;
+}
+.build14{
+    grid-area: build14;
+    justify-self: center;
+}
