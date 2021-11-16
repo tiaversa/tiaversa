@@ -35,7 +35,7 @@ nav{
 
 /*styling the backgroubd picture*/
 .alignBoth{
-    position: absolute;
+    position: relative;
     z-index: 1;
 }
 .backgroundPictureContainer{
@@ -81,6 +81,8 @@ nav{
 
 /*Writing in front of the main image*/
 .writing{
-    position: relative;
-    z-index: 3;
+    position: absolute;
+    top:30px;
+    left: 30px;
+    background: none;
 }
