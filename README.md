@@ -1,4 +1,4 @@
-### Hi there 👋
+[Hi, I'm Tiimna! image](images/png_20211223_092144_0000.png)
 
 - 🔭 I’m currently working on projects to develop my skills in the area of Data Engineering.
 - 🌱 I’m currently learning AWS technologyies and how to better implemente Airflow on projects.
