@@ -36,7 +36,6 @@ function landing()
 	textSize(18);
 	textFont('Palatino');
 	rotateText(windowWidth/2,windowHeight/2,min(150 * size, 380) ,"Welcome to my Portfolio, I'm a Data Engineer from Brazil and forever learner." , position);
-	console.log(windowHeight,position)
 	screenSize = position * 0.005;
 	computer.draw(windowWidth/2, windowHeight/2, size + screenSize);
 }
