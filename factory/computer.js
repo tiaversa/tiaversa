@@ -12,7 +12,7 @@ class Computer
         {
             this.totalXSize = 130 * size;
             this.starpointX =  x - this.totalXSize/2;
-            this.starpointY = y/2 - x /6;
+            this.starpointY = y/2 - x /9 - 25 * size;
             fill(246, 244, 235);
             stroke(0);
             rect(this.starpointX,this.starpointY,this.totalXSize,100 * size,2 * size);
@@ -60,11 +60,13 @@ class Computer
 
             // textFont(MeninBlue);
             textSize(3 * size);
-            text("Titi's", this.starpointX + this.totalXSize / 2 - 2.5 * size, this.starpointY + 95 * size);
-            text("world", this.starpointX + this.totalXSize / 2 - 3.2 * size, this.starpointY + 98 * size);
-            stroke(0,0,0,35);
+            fill(0);
+            text("Titi's", this.starpointX + this.totalXSize / 2, this.starpointY + 95 * size);
+            text("world", this.starpointX + this.totalXSize / 2, this.starpointY + 98 * size);
+            fill(246, 244, 235);
+            stroke(0,0,0,45);
             triangle(this.starpointX + 78 * size, this.starpointY + 98.5 * size, this.starpointX + 83 * size, this.starpointY + 98.5 * size, this.starpointX + 83 * size, this.starpointY + 95 * size);
-            ellipse(this.starpointX + 90 * size, this.starpointY + 96.5 * size,18);
+            ellipse(this.starpointX + 90 * size, this.starpointY + 96.5 * size,3 * size);
             this.sun(this.starpointX + 100 * size, this.starpointY + 96.5 * size,size);
             
 
@@ -121,7 +123,7 @@ class Computer
             fill(246, 244, 235);
             stroke(0,0,0,35);
             ellipse(x, y,2.3 * size);
-            fill(0,0,0,35);
+            // fill(0,0,0,35);
             for(let i = 0; i < 8; i ++)
             {
                 let xMove = this.r * sin(i * this.step);

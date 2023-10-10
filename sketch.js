@@ -1,51 +1,45 @@
+//mobile first
+
 let computer;
 let position;
+let buttons;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	computer = new Computer();
 	position = 0;
+	buttons = [new Button({x:windowWidth/2,
+							y:windowHeight/2 + windowHeight/4,
+							width:100,
+							height:50,
+							border:20,
+							colorButton:(255,255,255),
+							colorText:(0,0,0),
+							text:'Scroll',
+							isForDraw:true})];
 }
 
-function backgroupPage()
+function computerWindow()
 {
-	background(202, 237, 255);
-	stroke(130, 160, 216);
-	for(let i = 0; i < windowHeight; i++)
-	{
-		line(0, i * 20, windowWidth, i * 20);
-	}
-	for(let i = 0; i < windowWidth; i++)
-	{
-		line(i * 20,0, i * 20,windowHeight);
-	}
+	fill(237, 183, 237);
+	rect(100,100,100,100);
 }
-
-function landing()
+function mainPage()
 {
-	backgroupPage()
-	let size = windowWidth/500 + windowHeight/ 600;
-	fill(251, 240, 178, 70);
-	noStroke();
-	ellipse(windowWidth/2, windowHeight/2, windowHeight - 80 * size);
-	if (size > 4.5)
-	{
-		size = 4.5;
-	}
-	fill(0);
-	textSize(18);
-	textFont('Palatino');
-	rotateText(windowWidth/2,windowHeight/2,min(150 * size, 380) ,"Welcome to my Portfolio, I'm a Data Engineer from Brazil and forever learner." , position);
-	screenSize = position * 0.005;
-	computer.draw(windowWidth/2, windowHeight/2, size + screenSize);
+	backgroupPage({r:141,g:223,b:203}, {r:255,g:255,b:0}, 20);
+	computerWindow();
+
 }
 
 function draw() {
-	if(position < 1325)
+	if(position < 5005)
 	{
 		landing();
 	}
-	
+	else{
+		backgroupPage();
+	}
+	// mainPage();
 }
   
 function windowResized() {
@@ -58,4 +52,7 @@ function mouseWheel(event) {
 	{
 		position = 0;
 	}
+}
+function mousePressed() {
+	buttons.forEach((button) => {position = button.isPressed(mouseX,mouseY,position)})
 }
