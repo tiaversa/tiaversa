@@ -1,8 +1,8 @@
 function backgroupPage(backgroundColor, lineColor, squareSpace)
 {
 	console.log('here')
-	background(backgroundColor.r,backgroundColor.g,backgroundColor.b);
-	stroke(lineColor.r,lineColor.b,lineColor.c);
+	background(backgroundColor[0],backgroundColor[1],backgroundColor[2]);
+	stroke(lineColor[0],lineColor[1],lineColor[2]);
     strokeWeight(1);
 	for(let i = 0; i < windowHeight; i *= squareSpace)
 	{

@@ -1,6 +1,6 @@
 function landing()
 {
-	backgroupPage({r:202,g:237,b:255},{r:130,g:160,b:216},10);
+	backgroupPage((202,237,255),(130,160,216),10);
 	let size = windowWidth/500 + windowHeight/ 600;
 	fill(251, 240, 178, 70);
 	noStroke();

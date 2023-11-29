@@ -3,6 +3,7 @@
 let computer;
 let position;
 let buttons;
+let screens = {};
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
@@ -17,29 +18,27 @@ function setup() {
 							colorText:(0,0,0),
 							text:'Scroll',
 							isForDraw:true})];
+	screens.aboutMeScreen = new computerWindow(100,100,200,200,"About Me",(255));
 }
 
-function computerWindow()
-{
-	fill(237, 183, 237);
-	rect(100,100,100,100);
-}
 function mainPage()
 {
-	backgroupPage({r:141,g:223,b:203}, {r:255,g:255,b:0}, 20);
-	computerWindow();
+	background(255);
+	//backgroupPage((141,223,203), (255,255,0), 20);
+	// computerWindow(100,100,200,200,"Heere");
+	screens.aboutMeScreen.draw(10);
 
 }
 
 function draw() {
-	if(position < 5005)
-	{
-		landing();
-	}
-	else{
-		backgroupPage();
-	}
-	// mainPage();
+	// if(position < 5005)
+	// {
+	// 	landing();
+	// }
+	// else{
+	// 	backgroupPage();
+	// }
+	mainPage();
 }
   
 function windowResized() {
@@ -54,5 +53,8 @@ function mouseWheel(event) {
 	}
 }
 function mousePressed() {
-	buttons.forEach((button) => {position = button.isPressed(mouseX,mouseY,position)})
+	buttons.forEach((button) => {position = button.isPressed(mouseX,mouseY,position)});
+	for (const [name, screenObj] of Object.entries(screens)) {
+		screenObj.isPressed(mouseX,mouseY);
+	}
 }
