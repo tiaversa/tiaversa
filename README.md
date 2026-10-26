@@ -21,10 +21,11 @@
 A retro desktop covered in journaling-zine stickers, with draggable, 3D-tilting paper windows. No build step, no dependencies.
 
 - `index.html`: all the content (About Me, My CV, That Girl Engineer, My Pictures, Contact)
+  (the That Girl Engineer window follows the brand guide in [`that_girl_engineer`](https://github.com/tiaversa/that_girl_engineer); the rest keeps the journaling look)
 - `cv.html` and `cv/Timna_Aversa_CV.pdf`: the CV as a web page and a one-page PDF (printed from `cv.html`; no phone number on the public version)
 - `js/links.js`: every link on the site; empty ones show a "soon" tag until filled in
 - `css/style.css`, `css/cv.css`, `js/main.js`: styling, windows, 3D tilt and photo viewer
-- `fonts/`: Amatic SC, Patrick Hand and Josefin Sans (SIL Open Font License, licences included)
+- `fonts/`: Amatic SC, Patrick Hand and Josefin Sans for the site; Alfa Slab One, Archivo Black, Special Elite and VT323 for the That Girl Engineer window (open-source font licences included)
 - `images/timna-avatar.png`: cropped from the GitHub banner
 - `images/thumbs` and `images/gallery`: web-sized copies of the photos; the originals stay in `images/`
 
