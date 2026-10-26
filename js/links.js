@@ -8,10 +8,8 @@ window.SITE_LINKS = {
 
   // That Girl Engineer: platforms
   spotify: "https://open.spotify.com/show/5ooDfgQxMgrn1Ygd1R8bqy",
-  apple: "",
   youtube: "https://www.youtube.com/@that.girl.engineer",
   instagram: "https://www.instagram.com/that.girl.engineer/",
-  tiktok: "",
 
   // That Girl Engineer: episode list (titles are in index.html)
   ep1: "",
