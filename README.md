@@ -3,8 +3,8 @@
 <img src="images/timna-photo.jpg" align="right" width="170" alt="Photo of Timna">
 
 - 🔭 I'm a data engineer in Berlin, growing into **AI engineering**.
-- 🌱 I'm currently learning how to design, build and ship AI-powered applications, on top of the data engineering foundations I already have: pipelines, warehouses, data quality and cloud platforms.
-- 📣 I'm learning in public: follow my "Day X of learning AI engineering" recaps on [Instagram](https://www.instagram.com/that.girl.engineer/), and my podcast and videos, *That Girl Engineer*, on [Spotify](https://open.spotify.com/show/5ooDfgQxMgrn1Ygd1R8bqy) and [YouTube](https://www.youtube.com/@that.girl.engineer).
+- 🌱 I'm currently learning how to design, build and ship AI-powered applications: agents, MCP and everything else I'm figuring out. I'm building on the data engineering foundations I already have: pipelines, warehouses, data quality and cloud platforms.
+- 📣 *AI engineering, learned out loud.* I'm learning in public: follow my "Day X of learning AI engineering" recaps on [Instagram](https://www.instagram.com/that.girl.engineer/), and my podcast and videos, *That Girl Engineer*, on [Spotify](https://open.spotify.com/show/5ooDfgQxMgrn1Ygd1R8bqy) and [YouTube](https://www.youtube.com/@that.girl.engineer).
 - 🛠️ What I work with: Python, SQL, Airflow, dbt, Snowflake, Databricks, AWS, plus knowledge of Azure and GCP.
 - 👯 I'm looking to collaborate on open source that is beginner friendly.
 - 🤔 I'm looking for help finding great projects to grow my skills, be it with Python, SQL, Airflow, cloud platforms or AI engineering.
