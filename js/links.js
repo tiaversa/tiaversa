@@ -7,10 +7,10 @@ window.SITE_LINKS = {
   cv: "cv/Timna_Aversa_CV.pdf",
 
   // That Girl Engineer: platforms
-  spotify: "",
+  spotify: "https://open.spotify.com/show/5ooDfgQxMgrn1Ygd1R8bqy",
   apple: "",
-  youtube: "",
-  instagram: "",
+  youtube: "https://www.youtube.com/@that.girl.engineer",
+  instagram: "https://www.instagram.com/that.girl.engineer/",
   tiktok: "",
 
   // That Girl Engineer: episode list (titles are in index.html)

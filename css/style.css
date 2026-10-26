@@ -137,8 +137,12 @@ h1, h2, h3, p, ul, ol { margin: 0; }
   background: var(--coral); color: var(--ink); font: 700 .95rem/1.2 var(--font); text-transform: uppercase; letter-spacing: .06em; text-decoration: none; cursor: pointer;
   box-shadow: 4px 4px 0 var(--ink); transition: transform .12s, box-shadow .12s;
 }
+/* invisible hit area that also covers the drop shadow and the press-down shift, so clicks on the "edge" still count */
+.btn { position: relative; }
+.btn::after { content: ""; position: absolute; inset: -7px -12px -13px -7px; }
 .btn:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--ink); }
-.btn:active { transform: translate(3px, 3px); box-shadow: 1px 1px 0 var(--ink); }
+/* press = flatter shadow, no movement, so the click target never shifts under the pointer */
+.btn:active { box-shadow: 1px 1px 0 var(--ink); }
 .btn--green { background: var(--lime); }
 .btn--ghost { background: var(--paper-2); }
 .is-soon { border-style: dashed; cursor: not-allowed; }
