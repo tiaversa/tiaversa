@@ -42,6 +42,7 @@
       <!-- Desktop icons -->
       <nav class="icons" aria-label="Desktop">
         <a class="icon" href="#win-about" data-open="win-about"><span class="icon__tile">💼</span><span class="icon__label">About Me</span></a>
+        <a class="icon" href="#win-cv" data-open="win-cv"><span class="icon__tile">📄</span><span class="icon__label">My CV</span></a>
         <a class="icon" href="#win-podcast" data-open="win-podcast"><span class="icon__tile">🎙️</span><span class="icon__label">That Girl Engineer</span></a>
         <a class="icon" href="#win-pictures" data-open="win-pictures"><span class="icon__tile">📷</span><span class="icon__label">My Pictures</span></a>
         <a class="icon" href="#win-contact" data-open="win-contact"><span class="icon__tile">💬</span><span class="icon__label">Contact</span></a>
@@ -58,11 +59,11 @@
             <p class="lead">Hi, I'm Timna! I turn messy data into pipelines people can trust, and I like explaining how it all works while I'm at it.</p>
 
             <h3>What I do</h3>
-            <p>I'm a data engineer. I build and maintain data pipelines, connect systems that don't want to talk to each other, and make sure the numbers people rely on are the right ones.</p>
+            <p>I'm a data engineer based in Berlin. I build and maintain ETL pipelines, model data, and make sure the numbers people rely on are the right ones. I've modernised legacy infrastructure, consolidated data warehouses in Snowflake, and brought dbt into pipelines so they're more reliable, modular and reusable.</p>
 
             <h3>Tools I reach for</h3>
             <ul class="chips" aria-label="Skills">
-              <li>Python</li><li>SQL</li><li>Apache Airflow</li><li>AWS</li><li>Data pipelines</li><li>Automation</li>
+              <li>Python</li><li>SQL</li><li>Airflow</li><li>dbt</li><li>Snowflake</li><li>Redshift</li><li>PostgreSQL</li><li>AWS</li><li>Git</li><li>Scrum &amp; Kanban</li>
             </ul>
 
             <h3>Right now</h3>
@@ -73,13 +74,31 @@
             </ul>
 
             <h3>Outside of work</h3>
-            <p>Photography, board games, and a good laugh. I'm a very communicative person, so ask me anything.</p>
+            <p>Photography, board games, and a good laugh. I'm a very communicative person, so ask me anything. I speak English and Portuguese fluently, plus German and Spanish.</p>
 
             <p class="actions">
               <a class="btn" href="#" data-link="email">Email me</a>
               <a class="btn btn--green" href="#" data-link="cv">Download my CV</a>
               <a class="btn btn--ghost" href="#" data-link="linkedin">LinkedIn</a>
               <a class="btn btn--ghost" href="#" data-link="github">GitHub</a>
+            </p>
+          </div>
+        </section>
+
+        <!-- MY CV -->
+        <section class="win win--cv" id="win-cv" aria-labelledby="t-cv" data-x="20" data-y="12" data-w="400" style="--d:18;--r:1.6deg">
+          <div class="win__bar"><span class="win__ico">📄</span><h2 class="win__title" id="t-cv">My CV</h2></div>
+          <div class="win__body">
+            <p class="lead">Want the details? Here's my CV, one page, no fluff.</p>
+            <div class="cvcard">
+              <p class="cvcard__name">Timna Costa Aversa</p>
+              <p class="cvcard__role">Data Engineer · Berlin</p>
+              <p class="cvcard__line">ETL · Airflow · dbt · Snowflake · AWS</p>
+              <p class="cvcard__line">English C1 · Portuguese C1 · German A2 · Spanish B1</p>
+            </div>
+            <p class="actions">
+              <a class="btn" href="#" data-link="cv">Download PDF</a>
+              <a class="btn btn--green" href="cv.html">Read it online</a>
             </p>
           </div>
         </section>
@@ -168,6 +187,7 @@
   <div class="start-menu" id="start-menu" hidden>
     <ul>
       <li><a href="#win-about" data-open="win-about">💼 About Me</a></li>
+      <li><a href="#win-cv" data-open="win-cv">📄 My CV</a></li>
       <li><a href="#win-podcast" data-open="win-podcast">🎙️ That Girl Engineer</a></li>
       <li><a href="#win-pictures" data-open="win-pictures">📷 My Pictures</a></li>
       <li><a href="#win-contact" data-open="win-contact">💬 Contact</a></li>

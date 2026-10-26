@@ -4,6 +4,7 @@ My personal website: a retro desktop covered in journaling-zine stickers, with d
 Live at https://tiaversa.github.io/tiaversa/
 
 - `index.html`: all the content (About Me, That Girl Engineer, My Pictures, Contact)
+- `cv.html` and `cv/Timna_Aversa_CV.pdf`: the CV as a web page and a one-page PDF (the PDF is printed from `cv.html`; no phone number on the public version)
 - `js/links.js`: every link on the site; empty ones show a "soon" tag until filled in
 - `css/style.css`, `js/main.js`: styling, windows, 3D tilt and photo viewer (no build step, no dependencies)
 - `fonts/`: Amatic SC, Patrick Hand and Josefin Sans (SIL Open Font License, licences included)

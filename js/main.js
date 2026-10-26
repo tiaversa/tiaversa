@@ -14,7 +14,7 @@
     var url = links[a.dataset.link];
     if (url) {
       a.href = url;
-      if (/^https?:/.test(url)) { a.target = "_blank"; a.rel = "noopener noreferrer"; }
+      if (/^https?:|\.pdf$/.test(url)) { a.target = "_blank"; a.rel = "noopener noreferrer"; }
     } else {
       a.classList.add("is-soon");
       a.setAttribute("role", "link");

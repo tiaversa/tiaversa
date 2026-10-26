@@ -2,9 +2,9 @@
 // switch on automatically; empty ones show a "soon" tag on the page.
 window.SITE_LINKS = {
   email: "mailto:timnaaversa@gmail.com",
-  linkedin: "",
+  linkedin: "https://www.linkedin.com/in/timna-aversa/",
   github: "https://github.com/tiaversa",
-  cv: "",
+  cv: "cv/Timna_Aversa_CV.pdf",
 
   // That Girl Engineer: platforms
   spotify: "",
